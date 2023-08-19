@@ -4,7 +4,7 @@ public class Method {
 
 
     String hangiKahve;
-    String sut;
+    String milk;
     String seker;
     String boyut;
 
@@ -52,9 +52,9 @@ public class Method {
 
 
         System.out.println("Süt eklememizi ister misiniz ? (Evet veya Hayır olarak cevaplayınız):    ");
-        sut=input.next().toLowerCase();
+        milk=input.next().toLowerCase();
 
-        switch (sut){
+        switch (milk){
             case "evet":
                 System.out.println("Kahvenize süt ekleniyor" );
                 break;
