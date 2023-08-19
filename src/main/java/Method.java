@@ -5,7 +5,7 @@ public class Method {
 
     String hangiKahve;
     String milk;
-    String seker;
+    String sugar;
     String boyut;
 
     Scanner input = new Scanner(System.in);
@@ -64,8 +64,8 @@ public class Method {
     }
     public void sekerSec(){
         System.out.println("Şeker eklememizi ister misiniz ? (Evet veya Hayır olarak cevaplayınız):    ");
-        seker=input.next().toLowerCase();
-        if (seker.equals("evet")) {
+        sugar=input.next().toLowerCase();
+        if (sugar.equals("evet")) {
             System.out.println("Kaç şeker olsun?");
             int kacSeker = input.nextInt();
             System.out.println(kacSeker + " şeker ekleniyor.");
