@@ -13,82 +13,82 @@ public class Method {
 
 
 
-    public void hangiKahveSec() {
-        System.out.println("hangi kahveyi istersiniz");
-        System.out.println("Türk Kahvesi ,Filtre Kahve,Espresso");
+    public void chooseWhichCoffee() {
+        System.out.println("Which coffee would you like?");
+        System.out.println("Turkish Coffee, Filter Coffee, Espresso");
         whichCoffee = input.nextLine().toLowerCase();
 
 
 
 
         switch (whichCoffee){
-            case "türk kahvesi":
-                System.out.println("Türk kahvesi hazırlanıyor");
-                sutSec();
-                sekerSec();
-                boyutSec();
-                sonuc();
+            case "Turkish Coffee":
+                System.out.println("Turkish coffee being prepared");
+                selectMilk();
+                selectSugar();
+                chooseSize();
+                result();
                 break;
-            case "filtre kahve":
-                System.out.println("filtre kahve hazırlanıyor");
-                sutSec();
-                sekerSec();
-                boyutSec();
-                sonuc();
+            case "filter coffee":
+                System.out.println("Preparing filter coffee");
+                selectMilk();
+                selectSugar();
+                chooseSize();
+                result();
                 break;
             case "expresso":
-                System.out.println("espresso hazırlanıyor");
-                sutSec();
-                sekerSec();
-                boyutSec();
-                sonuc();
+                System.out.println("preparing expresso");
+                selectMilk();
+                selectSugar();
+                chooseSize();
+                result();
                 break;
             default:
-                System.out.println("lütfen bir seçim yapınız");
+                System.out.println("please make a choice");
         }
     }
 
-    public void sutSec(){
+    public void selectMilk(){
 
 
-        System.out.println("Süt eklememizi ister misiniz ? (Evet veya Hayır olarak cevaplayınız):    ");
+        System.out.println("Would you like us to add milk? (Answer Yes or No):    ");
         milk=input.next().toLowerCase();
 
         switch (milk){
-            case "evet":
-                System.out.println("Kahvenize süt ekleniyor" );
+            case "yes":
+                System.out.println("Adding milk to your coffee" );
                 break;
-            case "hayır":
-                System.out.println("Kahvenize süt eklenmiyor" );
+            case "no":
+                System.out.println("No milk added to your coffee" );
         }
     }
-    public void sekerSec(){
-        System.out.println("Şeker eklememizi ister misiniz ? (Evet veya Hayır olarak cevaplayınız):    ");
+    public void selectSugar(){
+        System.out.println("Would you like us to add sugar? (Answer Yes or No):    ");
         sugar=input.next().toLowerCase();
-        if (sugar.equals("evet")) {
-            System.out.println("Kaç şeker olsun?");
-            int kacSeker = input.nextInt();
-            System.out.println(kacSeker + " şeker ekleniyor.");
+        if (sugar.equals("yes")) {
+            System.out.println("how much sugar?");
+            int howMuchSugar = input.nextInt();
+            System.out.println(howMuchSugar + " sugar is added.");
         } else {
-            System.out.println("Şeker eklenmiyor.");
+            System.out.println("No sugar is added.");
         }
     }
 
-    public void boyutSec(){
-        System.out.println("Hangi boyutta olsun? (Büyük  - orta  - küçük  olarak giriniz.)");
+    public void chooseSize(){
+        System.out.println("What size would it be? (Enter large - medium - small.)");
         dimension=input.next().toLowerCase();
 
-        if (dimension.equalsIgnoreCase("büyük ")){
-            System.out.println("Kahveniz "+   dimension  + " hazırlanıyor.");
-        }else if (dimension.equalsIgnoreCase("orta boy")) {
-            System.out.println("Kahveniz  "+  dimension  +" hazırlanıyor.");
-        }else if (dimension.equalsIgnoreCase("küçük boy")) {
-            System.out.println("Kahveniz   " +  dimension  +"  hazırlanıyor.");
+        if (dimension.equalsIgnoreCase("large size ")){
+            System.out.println("your coffee "+   dimension  + " getting ready.");
+        }else if (dimension.equalsIgnoreCase("medium size")) {
+            System.out.println("your coffee  "+  dimension  +" getting ready.");
+        }else if (dimension.equalsIgnoreCase("Small-sized")) {
+            System.out.println("your coffee   " +  dimension  +"  getting ready.");
         }
 
     }
-    public void sonuc(){
-        System.out.println("Kahveniz " + dimension +" "  + "boy " +   whichCoffee + " şeklinde hazırlandı.Afiyet Olsun..." ) ;
+    public void result(){
+        System.out.println("your coffee " + dimension +" "  + "size " +   whichCoffee + " prepared in the form.Enjoy your meal..." ) ;
 
     }
 }
