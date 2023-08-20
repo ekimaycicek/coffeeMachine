@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Method {
 
 
-    String hangiKahve;
+    String whichCoffee;
     String milk;
     String sugar;
-    String boyut;
+    String dimension;
 
     Scanner input = new Scanner(System.in);
 
@@ -16,12 +16,12 @@ public class Method {
     public void hangiKahveSec() {
         System.out.println("hangi kahveyi istersiniz");
         System.out.println("Türk Kahvesi ,Filtre Kahve,Espresso");
-        hangiKahve = input.nextLine().toLowerCase();
+        whichCoffee = input.nextLine().toLowerCase();
 
 
 
 
-        switch (hangiKahve){
+        switch (whichCoffee){
             case "türk kahvesi":
                 System.out.println("Türk kahvesi hazırlanıyor");
                 sutSec();
@@ -76,19 +76,19 @@ public class Method {
 
     public void boyutSec(){
         System.out.println("Hangi boyutta olsun? (Büyük  - orta  - küçük  olarak giriniz.)");
-        boyut=input.next().toLowerCase();
+        dimension=input.next().toLowerCase();
 
-        if (boyut.equalsIgnoreCase("büyük ")){
-            System.out.println("Kahveniz "+   boyut  + " hazırlanıyor.");
-        }else if (boyut.equalsIgnoreCase("orta boy")) {
-            System.out.println("Kahveniz  "+  boyut  +" hazırlanıyor.");
-        }else if (boyut.equalsIgnoreCase("küçük boy")) {
-            System.out.println("Kahveniz   " +  boyut  +"  hazırlanıyor.");
+        if (dimension.equalsIgnoreCase("büyük ")){
+            System.out.println("Kahveniz "+   dimension  + " hazırlanıyor.");
+        }else if (dimension.equalsIgnoreCase("orta boy")) {
+            System.out.println("Kahveniz  "+  dimension  +" hazırlanıyor.");
+        }else if (dimension.equalsIgnoreCase("küçük boy")) {
+            System.out.println("Kahveniz   " +  dimension  +"  hazırlanıyor.");
         }
 
     }
     public void sonuc(){
-        System.out.println("Kahveniz " + boyut +" "  + "boy " +   hangiKahve + " şeklinde hazırlandı.Afiyet Olsun..." ) ;
+        System.out.println("Kahveniz " + dimension +" "  + "boy " +   whichCoffee + " şeklinde hazırlandı.Afiyet Olsun..." ) ;
 
     }
 }
