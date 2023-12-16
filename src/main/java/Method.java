@@ -83,9 +83,8 @@ public class Method {
         }else if (dimension.equalsIgnoreCase("medium size")) {
             System.out.println("your coffee  "+  dimension  +" getting ready.");
         }else if (dimension.equalsIgnoreCase("Small-sized")) {
-            System.out.println("your coffee   " +  dimension  +"  getting ready.");
+            System.out.println("your coffee   " + dimension + "  getting ready.");
         }
-
 
     }
     public void result(){
