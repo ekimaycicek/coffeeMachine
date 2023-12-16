@@ -86,6 +86,7 @@ public class Method {
             System.out.println("your coffee   " +  dimension  +"  getting ready.");
         }
 
+
     }
     public void result(){
         System.out.println("your coffee " + dimension +" "  + "size " +   whichCoffee + " prepared in the form.Enjoy your meal..." ) ;
