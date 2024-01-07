@@ -82,7 +82,6 @@ public class Method {
 
 
 
-
     public void chooseSize(){
         System.out.println("What size would it be? (Enter large - medium - small.)");
         dimension=input.next().toLowerCase();
